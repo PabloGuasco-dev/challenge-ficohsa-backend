@@ -32,6 +32,20 @@ mvn clean install
 mvn spring-boot:run
 La aplicación se ejecutará en localhost:8080.
 
+# Base de datos
+
+La base de datos se crea automaticamente cuando se inicia el proyecto, como tambíen la tabla "Item". 
+
+Solamente es necesario hacer los inserts, para luego poder hacer las pruebas. A continuación el ejemplo de como hacerlo. 
+
+Se pueden hacer desde la consola de H2: http://localhost:8080/h2-console
+
+INSERT INTO Item (text) VALUES ('Texto de prueba 1');
+INSERT INTO Item (text) VALUES ('Texto de prueba 2');
+INSERT INTO Item (text) VALUES ('Texto de prueba 3');
+INSERT INTO Item (text) VALUES ('Texto de prueba 4');
+
+
 Prueba de Endpoints
 Listar Items por Texto
 Realiza una solicitud GET a la siguiente URL utilizando Postman o tu herramienta preferida:
